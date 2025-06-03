@@ -1,0 +1,1 @@
+Given two integer arrays, X and Y, representing a set of BST keys, check if they represent the same BSTs or not without building the tree. Assume that the keys are inserted into the BST in the same order as they appear in the array.
