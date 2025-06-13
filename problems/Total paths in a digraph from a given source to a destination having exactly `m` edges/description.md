@@ -1,0 +1,4 @@
+The idea is to do a BFS traversal from the given source vertex. BFS is generally used to find the shortest paths in graphs/matrices, but we can modify normal BFS to meet our requirements. Usually, BFS doesn’t explore already discovered vertices again, but here we do the opposite. To cover all possible paths from source to destination, remove this check from BFS. But if the graph contains a cycle, removing this check will cause the program to go into an infinite loop. We can easily handle that if we don’t consider nodes having a BFS depth of more than m. Basically, we maintain two things in the BFS queue node:
+
+The current vertex number.
+The current depth of BFS (i.e., how far away from the current node is from the source?)
